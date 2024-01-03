@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600;
+    
+    color: hsl(0, 0%, 7%);
+}
+
+main {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+}
+
+.card {
+    width: 384px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    padding: 24px;
+    box-shadow: 0.5rem 0.5rem 0 0 rgba(0,0,0,1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 1rem 1rem 0 0 rgba(0,0,0,1);
+    .title {
+        color: hsl(47, 88%, 63%);
+    }
+}
+
+.header-image {
+    border-radius: 0.75rem;
+    object-fit: cover;
+    height: 201px;
+    width: 100%;
+}
+
+.yellowtag {
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+    padding: 0.3rem 0.6rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    margin: 1rem 0rem;
+    width: auto;
+}
+
+.published {
+    font-size: 0.9rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 1rem 0rem;
+    transition: color 0.3s;
+}
+
+.bodytext {
+    line-height: 1.75;
+    font-weight: 600;
+    color: hsl(0, 0%, 50%);
+}
+
+.submitter {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+.submitter > img {
+    height: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 325px;
+    }
+  }
